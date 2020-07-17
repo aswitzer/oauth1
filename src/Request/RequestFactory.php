@@ -106,6 +106,14 @@ class RequestFactory implements RequestFactoryInterface
             ],
         ], $options));
     }
+    
+    /**
+     * {@inheritdoc}
+     */
+    public function createForProtectedCustomResource(TokenCredentials $tokenCredentials, $method, $uri, array $options = [])
+    {
+        return $this->create($method, (string) $this->getConfig()->buildUri($uri), array_replace_recursive([], $options));
+    }
 
     /**
      * Create a new instance of Request class.
