@@ -1,5 +1,5 @@
 {
-    "name": "aswitzer/oauth1",
+    "name": "risan/oauth1",
     "type": "library",
     "description": "OAuth 1.0 client library for PHP forked from Risan",
     "keywords": [
@@ -11,7 +11,7 @@
         "tumblr",
         "upwork"
     ],
-    "homepage": "https://github.com/aswitzer/oauth1",
+    "homepage": "https://github.com/risan/oauth1",
     "license": "MIT",
     "authors": [
         {
@@ -23,12 +23,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "Aswitzer\\OAuth1\\": "src/"
+            "Risan\\OAuth1\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Aswitzer\\OAuth1\\Test\\": "tests"
+            "Risan\\OAuth1\\Test\\": "tests"
         }
     },
     "require": {
