@@ -187,7 +187,7 @@ class OAuth1 implements OAuth1Interface
         }
 
         return $this->httpClient->send(
-            $this->requestFactory->createForProtectedResource($this->getTokenCredentials(), $method, $uri, $options)
+            $this->requestFactory->createForProtectedCustomResource($this->getTokenCredentials(), $method, $uri, $options)
         );
     }
 }
